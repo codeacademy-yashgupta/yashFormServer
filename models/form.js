@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
     console.log(err);
   });
   form.getAllForms = () => form.findAll();
-
+  form.getAllFormField = id => form.findAll({
+    where: {
+      formId: id,
+    },
+  });
   return form;
 };

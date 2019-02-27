@@ -16,21 +16,4 @@ describe('forms GET route', () => {
     const response = await server.inject(options);
     expect(response.statusCode).toEqual(201);
   });
-  // it('should respond with an object', async () => {
-  //   const options = {
-  //     method: 'GET',
-  //     url: '/forms',
-  //   };
-  //   const response = await server.inject(options);
-  //   expect(typeof response.result).toEqual(typeof {});
-  // });
-  // it('should respond with an object with zero fields when truncated', async () => {
-  //   const options = {
-  //     method: 'GET',
-  //     url: '/forms',
-  //   };
-  //   const response = await server.inject(options);
-  //   console.log(response.result);
-  //   expect(Object.keys(response.result).length).toEqual(0);
-  // });
 });
