@@ -3,6 +3,7 @@ const getAllForms = require('./getAllForms');
 const insertNewForm = require('./insertNewForm');
 const formFields = require('./getAllFormFields');
 const insertFormData = require('./insertFormData');
+const getAllFormData = require('./getAllFormData');
 
 module.exports = [
   ...pingRoute,
@@ -10,4 +11,5 @@ module.exports = [
   ...insertNewForm,
   ...formFields,
   ...insertFormData,
+  ...getAllFormData,
 ];
