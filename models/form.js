@@ -21,5 +21,14 @@ module.exports = (sequelize, DataTypes) => {
       formId: id,
     },
   });
+  form.insertFormData = (formData, id) => {
+    form.update({
+      formData,
+    }, {
+      where: {
+        formId: id,
+      },
+    });
+  };
   return form;
 };
